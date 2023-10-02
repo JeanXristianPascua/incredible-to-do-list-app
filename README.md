@@ -1,17 +1,17 @@
 Setting Up a React Native Development Environment
 
-In this guide, we will walk through the step-by-step process of setting up a React Native development environment on a Windows system. We will create a sample React Native app called "Incredible Todo List App" using the React Native CLI. This guide assumes you have a basic understanding of JavaScript and a Windows-based system.
+In this guide, we will walk through the step-by-step process of setting up a React Native development environment on a Windows system. We will create a sample React Native app called "Incredible Todo List App" using the React Native CLI. 
 
 System Requirements
 Before getting started, ensure your system meets the following requirements:
-CPU: 64-bit processor, Intel Core i5 or equivalent
-RAM: 8GB or higher
-Windows version: Windows 10 or later
+•	CPU: 64-bit processor, Intel Core i5 or equivalent
+•	RAM: 8GB or higher
+•	Windows version: Windows 10 or later
 
 Installation Instructions
 1. Install Node.js and npm
 1.	Visit the official Node.js website at https://nodejs.org/.
-2.	Download the LTS (Long Term Support) version, which is recommended for most users.
+2.	Download the LTS (Long Term Support) version.
 3.	Run the installer and follow the on-screen instructions.
 4.	Open your command prompt or terminal and verify the installation by running the following commands:
 	node -v 
@@ -47,11 +47,8 @@ To run the project in an Android Device Simulator, follow these steps:
 
 
 Troubleshooting
-Debugging
-To debug your React Native app, you can use the built-in developer tools. To access these tools, press Ctrl + M (Windows) or Cmd + M (Mac) in the emulator.
-
 Common Issues
-Metro Bundler not running: If you encounter issues with the Metro Bundler, make sure you're in the project directory and run :
+Metro Bundler not running: If you encounter issues with the Metro Bundler, make sure you're in the project directory and run:
 	npx expo start or npm start
 Build issues: If you face build-related problems, check the official React Native documentation and community forums for solutions.
 
