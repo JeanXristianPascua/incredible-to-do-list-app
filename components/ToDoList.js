@@ -1,9 +1,14 @@
 import React from 'react';
-import { StyleSheet, Pressable, View, Text, ScrollView, StatusBar } from 'react-native';
+import { StyleSheet, Pressable, View, Text, StatusBar } from 'react-native';
 
 export default function ToDoList({tasks}){
+  if (!Array.isArray(tasks)) {
+    // Render a fallback UI when tasks is not an array
+    return <Text>No tasks available.</Text>;
+  }
+
   return (
-    <ScrollView>
+    <View>
       {tasks.map((task, index) => (
         <Pressable key={index}>
           <View style={styles.task}>
@@ -12,7 +17,7 @@ export default function ToDoList({tasks}){
         </Pressable>
       ))}
       <StatusBar/>
-    </ScrollView>
+    </View>
   );
 };
 

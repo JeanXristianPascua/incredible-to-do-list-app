@@ -1,26 +1,22 @@
-import React, { useState }  from 'react';
-import { SafeAreaView } from 'react-native';
-import ToDoList from './ToDoList';
-import ToDoForm from './ToDoForm';
+import React from 'react';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
+import HomeScreen from './screens/HomeScreen';
+import AboutScreen from './screens/AboutScreen';
+import 'react-native-gesture-handler';
+// Import other screens as needed
 
-export default function App() {
+const Drawer = createDrawerNavigator();
 
-  const [tasks] = useState([
-    'Do laundry',
-    'Go to gym',
-    'Walk dog',
-  ]);
-
-  const addTask = (taskText) => {
-    if (!tasks.includes(taskText)) {
-      setTasks([...tasks, taskText]);
-    }
-  };
-
+const App = () => {
   return (
-    <SafeAreaView>
-      <ToDoList tasks={tasks} />
-      <ToDoForm addTask={addTask}/>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Screen name="Home" component={HomeScreen} />
+        <Drawer.Screen name="About" component={AboutScreen} />
+      </Drawer.Navigator>
+    </NavigationContainer>
   );
-}
+};
+
+export default App;
