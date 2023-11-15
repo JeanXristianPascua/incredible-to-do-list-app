@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Alert, StyleSheet, Button } from 'react-native';
 
-const AboutScreen = ({ navigation }) => {
+export default function AboutScreen({ navigation }) {
   const [easterEggTriggered, setEasterEggTriggered] = useState(false);
 
   const showEasterEgg = () => {
@@ -49,4 +49,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default AboutScreen;
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const Footer = () => {
+export default function Footer() {
   return (
     <View style={styles.footerContainer}>
       <Text>Footer Content</Text>
@@ -15,5 +15,3 @@ const styles = StyleSheet.create({
     backgroundColor: '#eee',
   },
 });
-
-export default Footer;

@@ -4,7 +4,7 @@ import ToDoList from '../components/ToDoList';
 import ToDoForm from '../components/ToDoForm';
 import MainLayout from '../layouts/MainLayout';
 
-const HomeScreen = ({ navigation }) => {
+export default function HomeScreen({ navigation }) {
   const [tasks, setTasks] = useState(['Do laundry', 'Go to gym', 'Walk dog']);
 
   const addTask = taskText => {
@@ -21,4 +21,4 @@ const HomeScreen = ({ navigation }) => {
   );
 };
 
-export default HomeScreen;
+

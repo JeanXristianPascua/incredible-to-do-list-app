@@ -2,7 +2,7 @@ import React from 'react';
 import { View, ScrollView } from 'react-native';
 import Header from './Header';
 
-const MainLayout = ({ children, title = 'IncredibleTodoListApp' }) => {
+export default function MainLayout({ children, title = 'IncredibleTodoListApp' }) {
   return (
     <View>
       <Header title={title} />
@@ -13,6 +13,3 @@ const MainLayout = ({ children, title = 'IncredibleTodoListApp' }) => {
   );
 };
 
-
-
-export default MainLayout;
