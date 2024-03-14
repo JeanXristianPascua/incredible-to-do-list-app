@@ -1,9 +1,8 @@
-import React from 'react';
-import { StyleSheet, Pressable, View, Text, StatusBar } from 'react-native';
+import React from "react";
+import { StyleSheet, Pressable, View, Text, StatusBar } from "react-native";
 
-export default function ToDoList({tasks}){
+export default function ToDoList({ tasks }) {
   if (!Array.isArray(tasks)) {
-    // Render a fallback UI when tasks is not an array
     return <Text>No tasks available.</Text>;
   }
 
@@ -16,19 +15,19 @@ export default function ToDoList({tasks}){
           </View>
         </Pressable>
       ))}
-      <StatusBar/>
+      <StatusBar />
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   task: {
     padding: 10,
     borderBottomWidth: 1,
-    borderColor: '#ccc',
+    borderColor: "#ccc",
   },
   completed: {
-    backgroundColor: '#e0e0e0',
+    backgroundColor: "#e0e0e0",
   },
   taskText: {
     fontSize: 16,
