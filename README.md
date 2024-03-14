@@ -24,33 +24,33 @@ Before running the app, you'll need to have the following software installed:
 ### Installing
 
 1. Clone the repository:
-  ```
-  git clone https://github.com/JeanXristianPascua/IncredibleToDoListApp.git
-  ```
+      ```
+      git clone https://github.com/JeanXristianPascua/IncredibleToDoListApp.git
+      ```
 
 2. Navigate to the cloned directory:
-  ```
-  cd IncredibleToDoListApp
-  ```
+      ```
+      cd IncredibleToDoListApp
+      ```
 
 3. Install the project dependencies:
-  ```
-  npm install
-  ```
-  or if you're using Yarn:
-  ```
-  yarn install
-  ```
+      ```
+      npm install
+      ```
+      or if you're using Yarn:
+      ```
+      yarn install
+      ```
 
-4. Run the app on a simulator or a physical device:
-  For iOS:
-  ```
-  npx react-native run-ios
-  ```
-  For Android:
-  ```
-  npx react-native run-android
-  ```
+4. Run the app on a simulator or a physical device:  
+      For iOS:
+      ```
+      npx react-native run-ios
+      ```
+      For Android:
+      ```
+      npx react-native run-android
+      ```
 
 ### Contributing
 We welcome contributions to the IncredibleToDoListApp:
