@@ -51,12 +51,3 @@ Before running the app, you'll need to have the following software installed:
       ```
       npx react-native run-android
       ```
-
-### Contributing
-We welcome contributions to the IncredibleToDoListApp:
-
-Fork the repository.
-1. Create a new branch (git checkout -b feature/amazing-feature).
-2. Commit your changes (git commit -am 'Add some amazing feature').
-3. Push to the branch (git push origin feature/amazing-feature).
-4. Open a pull request.
